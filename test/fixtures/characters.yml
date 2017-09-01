@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  symbol: MyString
+  romaji: MyString
+
+two:
+  symbol: MyString
+  romaji: MyString
