@@ -2,23 +2,67 @@ User.destroy_all
 Character.destroy_all
 Test.destroy_all
 
-User.create(username: "test", email: "test@test.com", password: "password", password_confirmation: "password")
+User.create(username: "test", email: "test@test.com", image: "http://fillmurray.com/200/300", password: "password", password_confirmation: "password")
 
-Character.create([{
-  symbol: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Japanese_Hiragana_kyokashotai_small_A.png",
-  romaji: "a"
-  },{
-  symbol: "https://upload.wikimedia.org/wikipedia/commons/6/62/Japanese_Hiragana_kyokashotai_small_I.png",
-  romaji: "i"
-  },{
-  symbol: "https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_small_U.png",
-  romaji: "u"
-  },{
-  symbol: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Japanese_Hiragana_kyokashotai_small_E.png",
-  romaji: "e"
-  },{
-  symbol: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Japanese_Hiragana_kyokashotai_small_O.png",
-  romaji: "o"
-  }])
+Character.create([
+  {symbol: 'あ',romaji: 'a'},
+  {symbol: 'い',romaji: 'i'},
+  {symbol: 'う',romaji: 'u'},
+  {symbol: 'え',romaji: 'e'},
+  {symbol: 'お',romaji: 'o'},
+  {symbol: 'か', romaji: 'ka'},
+  {symbol: 'き', romaji: 'ki'},
+  {symbol: 'く', romaji: 'ku'},
+  {symbol: 'け', romaji: 'ke'},
+  {symbol: 'こ',romaji: 'ko'},
+  {symbol: 'さ',romaji: 'sa'},
+  {symbol: 'し',romaji: 'shi'},
+  {symbol: 'す',romaji: 'su'},
+  {symbol: 'せ',romaji: 'se'},
+  {symbol: 'そ',romaji: 'so'},
+  {symbol: 'た',romaji: 'ta'},
+  {symbol: 'ち',romaji: 'chi'},
+  {symbol: 'つ',romaji: 'tsu'},
+  {symbol: 'て',romaji: 'te'},
+  {symbol: 'と',romaji: 'to'},
+  {symbol: 'な',romaji: 'na'},
+  {symbol: 'に',romaji: 'ni'},
+  {symbol: 'ぬ',romaji: 'nu'},
+  {symbol: 'ね',romaji: 'ne'},
+  {symbol: 'の',romaji: 'no'},
+  {symbol: 'は',romaji: 'ha'},
+  {symbol: 'ひ',romaji: 'hi'},
+  {symbol: 'ふ',romaji: 'fu'},
+  {symbol: 'へ',romaji: 'he'},
+  {symbol: 'ほ',romaji: 'ho'},
+  {symbol: 'ま',romaji: 'ma'},
+  {symbol: 'み',romaji: 'mi'},
+  {symbol: 'む',romaji: 'mu'},
+  {symbol: 'め',romaji: 'me'},
+  {symbol: 'も',romaji: 'mo'},
+  {symbol: 'や',romaji: 'ya'},
+  {symbol: 'ゆ',romaji: 'yu'},
+  {symbol: 'よ',romaji: 'yo'},
+  {symbol: 'ら',romaji: 'ra'},
+  {symbol: 'り',romaji: 'ri'},
+  {symbol: 'る',romaji: 'ru'},
+  {symbol: 'れ',romaji: 're'},
+  {symbol: 'ろ',romaji: 'ro'},
+  {symbol: 'わ',romaji: 'wa'},
+  {symbol: 'を',romaji: 'o'},
+  {symbol: 'ん',romaji: 'n'}])
 
-Test.create(name: "Hiragana - First Five", character_ids: [1,2,3,4,5])
+Test.create([
+  {name: "A", character_ids: [1,2,3,4,5]},
+  {name: "KA", character_ids: [6,7,8,9,10]},
+  {name: "SA", character_ids: [11,12,13,14,15]},
+  {name: "TA", character_ids: [16,17,18,19,20]},
+  {name: "NA", character_ids: [21,22,23,24,25]},
+  {name: "HA", character_ids: [26,27,28,29,30]},
+  {name: "MA", character_ids: [31,32,33,34,35]},
+  {name: "YA", character_ids: [36,37,38]},
+  {name: "RA", character_ids: [39,40,41,42,43]},
+  {name: "WA", character_ids: [44,45,46]},
+  {name: "All Hiragana", character_ids: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,
+    41,42,43,44,45]},
+  ])
