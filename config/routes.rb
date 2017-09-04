@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   scope :api do
+    resources :scores
+    resources :words
     resources :characters
     resources :tests
     resources :users, except: [:create]

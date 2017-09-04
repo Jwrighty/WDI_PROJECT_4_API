@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  symbol: MyString
+  romaji: MyString
+  meaning: MyString
+
+two:
+  symbol: MyString
+  romaji: MyString
+  meaning: MyString
